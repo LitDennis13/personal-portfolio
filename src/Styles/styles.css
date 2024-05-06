@@ -126,13 +126,7 @@ main {
     background-image: linear-gradient(120deg, rgba(123,213,245,1) 20%, rgb(91, 99, 236) 40%, rgba(74,222,222,1) 60%, rgba(0,0,0,1) 80%, rgba(31,47,152,1) 100%);
     transition: transform .5s, box-shadow .5s;
 }
-#project:hover {
-    box-shadow: 10px 10px rgb(55,55,55); 
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-    box-shadow: 10px 10px rgb(55,55,55);
-    transform: translate(-10px,-10px);
-    transition: transform .5s, box-shadow .5s;
-}
+
 
 #project-image {
     width: 100%;
