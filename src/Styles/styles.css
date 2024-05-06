@@ -9,42 +9,76 @@
 }
 
 :root {
-    font-family: UbuntuSansMono;
-    background-image: linear-gradient(180deg, rgba(123,213,245,1) 20%, rgb(91, 99, 236) 40%, rgba(74,222,222,1) 60%, rgba(0,0,0,1) 80%, rgba(31,47,152,1) 100%);
-    
+    font-family: UbuntuSansMono; 
+    background-image: linear-gradient(120deg, rgba(123,213,245,1) 20%, rgb(91, 99, 236) 40%, rgba(74,222,222,1) 60%, rgba(0,0,0,1) 80%, rgba(31,47,152,1) 100%);  
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
+#about-me-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    row-gap: 2rem;
 }
 
-header {
-    grid-area: 1 / 1 / 2 / 2;
+nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+}
+
+nav > button {
+    font-size: 2rem;
+    border: none;
+    height: 100%;
+    width: 50%;
+}
+
+#about-me-button {
+    background-color: rgb(91, 99, 236);
+}
+#about-me-button:hover, #about-me-button.active {
+    background-color: rgb(51, 59, 196);
+}
+#projects-button {
+    background-color: rgb(71,209,209);
+}
+#projects-button:hover, #projects-button.active {
+    background-color: rgb(31,179,179);
+}
+
+#about-me-header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     
+}
+
+#name {
+    text-align: center;
+    width: 100%;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
 }
 
 #mobile-profile-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
-}
-
-#name {
-    text-align: center;
-    font-size: 2.8rem;
+    margin: -1rem;
 }
 
 #about-me {
-    padding-top: .5rem;
+    margin-top: 1.3rem;
     display: flex;
     flex-flow: column nowrap;
     row-gap: .5rem;
     justify-content: center;
     align-items: center;
+
+    color: white;
 }
 
 #about-me-title {
@@ -56,16 +90,120 @@ header {
     text-align: center;
 }
 
+#projects-title {
+    font-size: 2.7rem;
+}
+
+#projects-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#projects-header {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#projects-title {
+    text-align: center;
+}
+
 main {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+    padding: 1rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+#project {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    background-image: linear-gradient(120deg, rgba(123,213,245,1) 20%, rgb(91, 99, 236) 40%, rgba(74,222,222,1) 60%, rgba(0,0,0,1) 80%, rgba(31,47,152,1) 100%);
+    transition: transform .5s, box-shadow .5s;
+}
+#project:hover {
+    box-shadow: 10px 10px rgb(55,55,55); 
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    box-shadow: 10px 10px rgb(55,55,55);
+    transform: translate(-10px,-10px);
+    transition: transform .5s, box-shadow .5s;
+}
+
+#project-image {
+    width: 100%;
+}
+
+#project-first-level-info {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: .5rem;
+    align-items: center;
+}
+
+#project-name {
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+#project-link {
+    margin-right: 1rem;
+}
+
+#link-icon {
+    width: 24px;
+    filter: invert(91%) sepia(16%) saturate(19%) hue-rotate(29deg) brightness(106%) contrast(102%);
+}
+
+#project-github {
     
 }
 
-footer {
+#github-icon {
+    width: 24px;
+    filter: invert(91%) sepia(16%) saturate(19%) hue-rotate(29deg) brightness(106%) contrast(102%);
+    margin-right: .3rem;
+}
 
+#project-second-level-info {
+    padding: .5rem;
+}
+
+#project-desc {
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 #mobile-profile-computer-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
+    margin-bottom: -4px;
+}
+
+
+#links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: rgb(12,17,56);
+    height: 50px;
+}
+
+#github-link {
+    display: flex;
+    align-items: center;
+}
+#github-link > img {
+    height: 80%;
+    width: auto;
+    filter: invert(91%) sepia(16%) saturate(19%) hue-rotate(29deg) brightness(106%) contrast(102%);
 }

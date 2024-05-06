@@ -1,5 +1,7 @@
+import githubIcon from "../images/Icons/githubIcon.png";
+
 const aboutMePageHTML = `<nav>
-<button id="about-me-button">About me</button>
+<button id="about-me-button" class="active">About me</button>
 <button id="projects-button">Projects</button>
 </nav>
 <header id="about-me-header">
@@ -9,14 +11,19 @@ const aboutMePageHTML = `<nav>
 </picture>
 <div id="about-me">
     <h2 id="about-me-title">About Me</h2>
-    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto maxime laboriosam doloribus sapiente nam velit modi quisquam fuga similique earum, eos praesentium mollitia accusamus repellat, sed laudantium, nihil omnis!</p>
+    <p id="description">I like Programming. I like Computers. I like Gaming. I like Formula One. I like Racing.</p>
 </div>
 </header>
 
-<footer id="about-me-footer">
+<footer>
 <picture>
     <img id="mobile-profile-computer-picture" alt="Profile Avatar On Computer">
 </picture>
+<div id="links">
+    <a id="github-link" href="https://github.com/LitDennis13">
+    <img src="${githubIcon}" alt="Github Icon">
+    </a>
+</div>
 </footer>`;
 
 function loadAboutMePage() {
