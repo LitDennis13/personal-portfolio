@@ -58,6 +58,7 @@ nav > button {
 }
 
 #name {
+    color: blue;
     text-align: center;
     width: 100%;
     font-size: 9vw;
