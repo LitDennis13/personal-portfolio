@@ -1,5 +1,6 @@
 // Style Sheets
 import "./Styles/styles.css";
+import "./Styles/tablet-styles.css";
 
 // Scripts
 import "./Scripts/image-loading-script";
