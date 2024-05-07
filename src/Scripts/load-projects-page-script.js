@@ -23,9 +23,7 @@ const projectsPageHTML = `<nav>
 </main>
 
 <footer>
-<picture>
-    <img id="mobile-profile-computer-picture" alt="Profile Avatar On Computer">
-</picture>
+    <img id="profile-computer-picture" alt="Profile Avatar On Computer">
 <div id="links">
     <a id="github-link" href="https://github.com/LitDennis13">
     <img src="${githubIcon}" alt="Github Icon">

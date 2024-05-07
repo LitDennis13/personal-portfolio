@@ -1,6 +1,5 @@
-import mobileAvatar from "../images/Avatars/Avatar-Mobile.png";
-import tabletAvatar from "../images/Avatars/Avatar-Tablet.png";
-import desktopAvatar from "../images/Avatars/Avatar-Desktop.png";
+/* eslint-disable prettier/prettier */
+import avatar from "../images/Avatars/Avatar.png";
 
 import mobileAvatarComputer from "../images/Avatars/AvatarComputer-Mobile.png";
 
@@ -8,17 +7,31 @@ import tabletAvatarComputer from "../images/Avatars/AvatarComputer-Tablet.png";
 
 import desktopAvatarComputer from "../images/Avatars/AvatarComputer-Desktop.png";
 
+let currentWidth = window.innerWidth;
+
 function loadAvatarImage() {
-    // eslint-disable-next-line prettier/prettier
-    const mobileAvatarHtmlImg = document.querySelector("#mobile-profile-picture");
-    mobileAvatarHtmlImg.src = mobileAvatar;
+    const avatarHtmlImg = document.querySelector("#profile-picture");
+    avatarHtmlImg.src = avatar;
+    
 }
 
 function loadAvatarComputerImage() {
-    // eslint-disable-next-line prettier/prettier
-    const mobileAvatarComputerHtmlImg = document.querySelector("#mobile-profile-computer-picture");
-    mobileAvatarComputerHtmlImg.src = mobileAvatarComputer;
+    currentWidth = window.innerWidth;
+    const avatarComputerHtmlImg = document.querySelector("#profile-computer-picture");
+
+    if (currentWidth > 1000) {
+        avatarComputerHtmlImg.src = desktopAvatarComputer;
+    }
+    else if (currentWidth > 500) {
+        avatarComputerHtmlImg.src = tabletAvatarComputer;
+    }
+    else {
+        avatarComputerHtmlImg.src = mobileAvatarComputer;
+    }
 }
 
-// loadImages();
+window.addEventListener("resize", () =>{
+    loadAvatarComputerImage();
+});
+
 export { loadAvatarImage, loadAvatarComputerImage };
