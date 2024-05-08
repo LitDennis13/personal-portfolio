@@ -5,6 +5,7 @@ import weatherImage from "../images/ProjectPictures/Weather.png";
 import tictactoeImage from "../images/ProjectPictures/TicTacToe.png";
 import etchasektchImage from "../images/ProjectPictures/EtchaSketch.png";
 import rockpaperscissorsImage from "../images/ProjectPictures/RockPaperScissors.png";
+import calculatorImage from "../images/ProjectPictures/Calculator.png";
 
 import openInViewIcon from "../images/Icons/openInViewIcon.png";
 import githubIcon from "../images/Icons/githubIcon.png";
@@ -88,6 +89,14 @@ const projects = [
         imgAlt: "Rock Paper Scissors Project Picture",
         linkToProject: "https://litdennis13.github.io/odin-rockpaperscissors/",
         linkToGithub: "https://github.com/LitDennis13/odin-rockpaperscissors",
+    },
+    {
+        name: "Calculator",
+        description: "A fully functioning calculator",
+        imgSrc: calculatorImage,
+        imgAlt: "Calculator Project Picture",
+        linkToProject: "https://litdennis13.github.io/odin-calculator/",
+        linkToGithub: "https://github.com/LitDennis13/odin-calculator",
     },
 ];
 
