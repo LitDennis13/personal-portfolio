@@ -54,7 +54,6 @@ nav > button {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    
 }
 
 #name {
@@ -64,7 +63,7 @@ nav > button {
     margin-bottom: 1rem;
 }
 
-#mobile-profile-picture {
+#profile-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -112,7 +111,7 @@ nav > button {
 
 main {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: 100%;
     padding: 1rem;
     row-gap: 2rem;
     column-gap: 2rem;
@@ -172,13 +171,11 @@ footer {
     flex-flow: column nowrap;
 }
 
-#mobile-profile-computer-picture {
+#profile-computer-picture {
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin-bottom: -4px;
 }
-
 
 #links {
     display: flex;
