@@ -14,7 +14,7 @@ const aboutMePageHTML = `<nav>
     <p id="description">I like Programming. I like Computers. I like Gaming. I like Formula One. I like Racing.</p>
 </div>
 </header>
-
+<main></main>
 <footer>
 <img id="profile-computer-picture" alt="Profile Avatar On Computer">
 <div id="links">
