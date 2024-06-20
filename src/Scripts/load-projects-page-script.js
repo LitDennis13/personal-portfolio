@@ -7,6 +7,7 @@ import etchasektchImage from "../images/ProjectPictures/EtchaSketch.png";
 import rockpaperscissorsImage from "../images/ProjectPictures/RockPaperScissors.png";
 import calculatorImage from "../images/ProjectPictures/Calculator.png";
 import cvApplication from "../images/ProjectPictures/CVApplication.png";
+import formulaOneMemoryCardGame from "../images/ProjectPictures/FormulaOneMemoryCardGame.png";
 
 import openInViewIcon from "../images/Icons/openInViewIcon.png";
 import githubIcon from "../images/Icons/githubIcon.png";
@@ -106,6 +107,14 @@ const projects = [
         imgAlt: "CV Application Project Picture",
         linkToProject: "https://dennis-cv-application.netlify.app/",
         linkToGithub: "https://github.com/LitDennis13/odin-cv-application",
+    },
+    {
+        name: "Formula Memory Card Game",
+        description: "A memory card game using formula one teams",
+        imgSrc: formulaOneMemoryCardGame,
+        imgAlt: "Formula One Memory Card Game Picture",
+        linkToProject: "https://dennis-memory-card-game.netlify.app/",
+        linkToGithub: "https://github.com/LitDennis13/odin-memory-card",
     },
 ];
 
