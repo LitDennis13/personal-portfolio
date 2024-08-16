@@ -8,6 +8,7 @@ import rockpaperscissorsImage from "../images/ProjectPictures/RockPaperScissors.
 import calculatorImage from "../images/ProjectPictures/Calculator.png";
 import cvApplication from "../images/ProjectPictures/CVApplication.png";
 import formulaOneMemoryCardGame from "../images/ProjectPictures/FormulaOneMemoryCardGame.png";
+import randomStoreImage from "../images/ProjectPictures/RandomStore.png";
 
 import openInViewIcon from "../images/Icons/openInViewIcon.png";
 import githubIcon from "../images/Icons/githubIcon.png";
@@ -51,6 +52,14 @@ const projects = [
         imgAlt: "Library Project Picture",
         linkToProject: "https://litdennis13.github.io/odin-todo-list/",
         linkToGithub: "https://github.com/LitDennis13/odin-todo-list",
+    },
+    {
+        name: "Random Store",
+        description: "A mock shopping website",
+        imgSrc: randomStoreImage,
+        imgAlt: "Random Store Image",
+        linkToProject: "https://dennis-shopping-cart.netlify.app/",
+        linkToGithub: "https://github.com/LitDennis13/shopping-cart",
     },
     {
         name: "Library",
